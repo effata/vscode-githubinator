@@ -123,9 +123,7 @@ export class Github extends BaseProvider {
     const rootUrl = `https://${repoInfo.hostname}/`
     const { start, end } = selection
     // Github uses 1-based indexing
-    const lines = `L${start.line + 1}C${start.character + 1}-L${
-      end.line + 1
-    }C${end.character + 1}`
+    const lines = `L${start.line + 1}-L${end.line + 1}`
     const repoUrl = new url.URL(
       path.join(repoInfo.org, repoInfo.repo),
       rootUrl,
