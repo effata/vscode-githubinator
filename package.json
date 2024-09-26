@@ -27,6 +27,7 @@
   "engines": {
     "vscode": "^1.89.0"
   },
+  "activationEvents": [],
   "categories": [
     "Other"
   ],
